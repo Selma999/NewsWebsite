@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["run","console","log"],"mappings":";AAAA,IAAMA,EAAM,WACRC,QAAQC,IAAI","file":"NewsWebsite.360f5120.js","sourceRoot":"..","sourcesContent":["const run = () => {\n    console.log(\"works\");\n};"]}
