@@ -174,7 +174,7 @@ li {
 .carousel-item {
     height: 100vh;
     position: center;
-    background-size: 110%;
+    background-size: cover;
 }
 
 .carousel-caption {
@@ -184,6 +184,7 @@ li {
     display: table;
     text-align: center;
     margin: auto;
+    background-repeat: no-repeat !important;
 }
 
 .carousel-caption h1 {
@@ -194,14 +195,6 @@ li {
     padding-bottom: 1rem;
     vertical-align: middle;
     height: 100%;
-}
-
-.carousel-caption h3{
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: .1rem .1rem .5rem black;
-    padding-bottom: 1.6rem;
-    color: white;
 }
 
 .btn-lg {
@@ -377,16 +370,24 @@ input[type="submit"]:hover {
         font-size: 4rem;
         letter-spacing: .2rem;
     }
+    .carousel-item {
+        height: 100vh;
+        position: center;
+        background-size: 100%;
+        background-repeat: no-repeat !important;
+    }
+
     @keyframes text
-{
-    0% {
-        letter-spacing: 20px;
-    }
-    100% {
-        letter-spacing: 5px;
+    {
+        0% {
+            letter-spacing: 20px;
+        }
+        {
+            letter-spacing: 5px;
         
+        }
     }
-}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -407,7 +408,7 @@ input[type="submit"]:hover {
     0% {
         letter-spacing: 10px;
     }
-    100% {
+    {
         letter-spacing: 1px;
         
     }
@@ -416,6 +417,14 @@ input[type="submit"]:hover {
         font-size: 2.5rem;
         letter-spacing: .1rem;
     }
+
+    .carousel-item {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+    }
+
     #up {
         bottom: 20px;
         right: 20px;
