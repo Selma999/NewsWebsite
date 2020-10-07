@@ -1,3 +1,16 @@
+/* body background animation */
+@keyframes body-bg-anim {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: black;
+        background-image: none;
+    }
+    100% {
+        background-image: url("images/globe1.jpg");
+    }
+}
 /* Start */
 
 * {
@@ -15,14 +28,27 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
     background-image: url("images/globe1.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-position-y: 0;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    transition: all .5s ease;
+    background-color: black;
+    transition: all 1s ease;
+    transition: background-position-y 1.5s 0.2s ease, background-color 1s ease;
+}
+
+.bg-active {
+    background-position-y: -1500px;
+    background-image: none;
+    background-color: white;
+    transition: all 1s ease;
 }
 
 a {
@@ -169,17 +195,11 @@ li {
     0% {
         letter-spacing: 70px;
     }
-    {
-        letter-spacing: 10px;
-        
-    }
+    100% {}
 }
 
 section {
     height: 100vh;
-}
-.bg-active {
-    background-color: white;
 }
 
 /* Image Slider (Carousel) */
@@ -410,10 +430,7 @@ input[type="submit"]:hover {
         0% {
             letter-spacing: 20px;
         }
-        {
-            letter-spacing: 5px;
-        
-        }
+        100% {}
     }
 
 }
@@ -436,10 +453,7 @@ input[type="submit"]:hover {
     0% {
         letter-spacing: 10px;
     }
-    {
-        letter-spacing: 1px;
-        
-    }
+    100% {}
 }
     .carousel-caption h1 {
         font-size: 2.5rem;
