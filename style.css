@@ -11,6 +11,7 @@
         background-image: url("images/globe1.jpg");
     }
 }
+
 /* Start */
 
 * {
@@ -50,6 +51,7 @@ body {
     background-color: white;
     transition: all 1s ease;
 }
+
 
 a {
     text-decoration: solid;
@@ -172,12 +174,13 @@ li {
 
 .title1 h1 {
     font-size: 25rem;
-    /*font-family: 'Montserrat', sans-serif;*/
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 20px;
     font-weight: bolder;
     text-align: center;
+    display: flex;
     justify-content: center;
+    margin: auto;
     background-color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -186,7 +189,8 @@ li {
 }
 
 .title p {
-    font-size: 5rem;
+    font-size: 10rem;
+    font-weight: bolder !important;
 }
 
 
@@ -247,8 +251,7 @@ section {
     border-radius: 0;
     font-size: 1.1rem;
     background: rgb(65, 63, 63);
-}/* linear-gradient(to bottom, grey, rgb(80, 79, 79));*/
-
+}
 
 .outline {
     border: 2px solid white;
@@ -278,21 +281,6 @@ section {
 .col-md-6 p {
     text-transform: initial;
     font-size: 3rem;
-}
-/* Hover effect for images in grid */
-
-.thumbnail {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-img {
-    -webkit-transition: all 0.5s ease;
-}
-
-img:hover {
-    transform: scale(1.4);
 }
 
 /* Contact frame */
