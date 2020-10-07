@@ -1,5 +1,5 @@
 function bgChanger() {
-  if (this.scrollY > this.innerHeight * (1 / 3)) {
+  if (this.scrollY > this.innerHeight * (1 / 3) && this.scrollY < this.innerHeight * 2) {
     document.body.classList.add('bg-active');
     document.body.classList.remove('bg');
   } else {
