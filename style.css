@@ -85,16 +85,19 @@ header {
 
 .change .bar.start {
     transform: rotate(65deg) translate(25px, -21px);
+    transform: translateX(-30px);
 }
 
 .change .bar.middle {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
+    transform: translateX(-30px);
 }
 
 .change .bar.end {
     transform: rotate(-65deg) translate(25px, 21px);
+    transform: translateX(-30px);
 }
 
 .menu-list {
