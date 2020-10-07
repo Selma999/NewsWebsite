@@ -206,15 +206,8 @@ section {
 }
 
 .carousel-indicators .active {
-    background-color: rgb(36, 35, 35);
-}
 
-.carousel-control-prev-icon:after {
-    color: rgb(65, 62, 62);
-}
-
-.carousel-control-next-icon:after {
-    color: rgb(65, 62, 62);   
+       background-color: rgb(36, 35, 35);
 }
 
 .btn-lg {
