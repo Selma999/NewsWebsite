@@ -181,7 +181,7 @@ li {
     font-weight: bolder;
     text-align: center;
     justify-content: center;
-    margin: 10rem 5rem auto;
+    margin: 10rem auto 5rem;
     background-color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -190,7 +190,7 @@ li {
 }
 
 .title p {
-    font-size: 10rem;
+    font-size: 20rem;
     font-weight: bolder !important;
 }
 
@@ -402,7 +402,7 @@ input[type="submit"]:hover {
         font-size: 15rem;
         letter-spacing: 10px;
         padding: 0.5rem;
-        margin: 15rem .1rem auto;
+        margin: 15rem auto 5rem;
     }
     .carousel-caption h1 {
         font-size: 4rem;
@@ -441,7 +441,7 @@ input[type="submit"]:hover {
         font-size: 10rem;
         letter-spacing: 5px;
         padding: 0.1rem;
-        margin: 15rem .1rem auto;
+        margin: 15rem auto 5rem;
     }
     .title1 p {
         font-size: 1.5rem;
