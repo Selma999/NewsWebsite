@@ -170,6 +170,8 @@ li {
 .title1 {
     background-color: rgba(0, 0, 0, 0.07);
     color: black;
+    display: flex;
+
 }
 
 .title1 h1 {
@@ -178,13 +180,12 @@ li {
     letter-spacing: 20px;
     font-weight: bolder;
     text-align: center;
-    display: flex;
     justify-content: center;
-    margin: auto;
+    margin: 10rem 5rem auto;
     background-color: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 1rem;
+    padding: 5rem;
     animation: text 2s ease-in-out;
 }
 
@@ -401,6 +402,7 @@ input[type="submit"]:hover {
         font-size: 15rem;
         letter-spacing: 10px;
         padding: 0.5rem;
+        margin: 15rem .1rem auto;
     }
     .carousel-caption h1 {
         font-size: 4rem;
@@ -423,7 +425,14 @@ input[type="submit"]:hover {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+    body {
+        background-image: url("images/globe1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .menu {
         top: 2rem;
         right: 2rem;
@@ -431,7 +440,8 @@ input[type="submit"]:hover {
     .title1 h1 {
         font-size: 10rem;
         letter-spacing: 5px;
-        padding: 0;
+        padding: 0.1rem;
+        margin: 15rem .1rem auto;
     }
     .title1 p {
         font-size: 1.5rem;
