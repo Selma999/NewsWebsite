@@ -1,4 +1,5 @@
 /* body background animation */
+/*
 @keyframes body-bg-anim {
     0% {
         background-color: white;
@@ -10,7 +11,7 @@
     100% {
         background-image: url("images/globe1.jpg");
     }
-}
+}*/
 
 /* Start */
 
@@ -34,7 +35,7 @@ body {
 }
 
 .bg {
-    background-image: url("images/globe1.jpg");
+    background-image: url("images/splash7.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 0;
@@ -42,7 +43,7 @@ body {
     background-attachment: fixed;
     background-color: black;
     transition: all 1s ease;
-    transition: background-position-y 1.5s 0.2s ease, background-color 1s ease;
+   /* transition: background-position-y 1.5s 0.2s ease, background-color 1s ease;*/
 }
 
 .bg-active {
@@ -60,8 +61,9 @@ a {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
+    text-decoration: solid;
     color: white;
 }
 
@@ -168,7 +170,6 @@ li {
 /* Main title */
 
 .title1 {
-    background-color: rgba(0, 0, 0, 0.07);
     color: black;
     display: flex;
 
