@@ -426,7 +426,7 @@ textarea {
 
 /* Media quaries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
     body {
         background-image: url("images/splash7.jpeg");
         background-repeat: no-repeat;
@@ -457,6 +457,9 @@ textarea {
             letter-spacing: 20px;
         }
         100% {}
+    }
+    .row-even {
+        flex-direction: column-reverse;
     }
 
 }
