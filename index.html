@@ -1,175 +1,262 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            D S T 
-        </title>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/> 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body class="bg">
-        <header>
-            <nav class="top-nav">
-                <div class="menu">
-                    <div class="bar start"></div>
-                    <div class="bar middle"></div>
-                    <div class="bar end"></div>
-                </div>
-                <ul class="menu-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="#about-us" class="nav-link">About us</a></li>
-                    <li><a href="#products" class="nav-link">Products</a></li>
-                    <li><a href="#careers" class="nav-link">Careers</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li>
-                        <input class="search-txt" type="text" name="" placeholder="Search">
-                        <a href="#search" class="nav-link"></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D S T</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <header>
+        <nav class="top-nav">
+          <div class="menu">
+            <div class="bar start"></div>
+            <div class="bar middle"></div>
+            <div class="bar end"></div>
+          </div>
+          <ul class="menu-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#about-us" class="nav-link">About us</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#careers" class="nav-link">Careers</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Search"
+              />
+              <a href="#search" class="nav-link"></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-        <!-- Homepage -->
+    <!-- Homepage -->
 
-        <section class="news-ticker">
-            <span class="title1"><h1>DST</h1></span>
-            <p>Design | Software | Technology</p>
-        </section>
+    <section class="news-ticker">
+      <span class="title1"><h1>DST</h1></span>
+      <p>Design | Software | Technology</p>
+    </section>
 
-        <!-- Image Slider -->
-        <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000" data-aos="fade-up" data-aos-delay="300">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox" id="about-us">
-                <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background-image: url(images/thumb-1013968_1280.jpg);">
-                        <div class="carousel-caption text-center">
-                            <h1>Goals & Objectives</h1>
-                            <a class="btn btn-outline btn-lg outline">Read more</a>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-                <!-- Slide 2 -->
-                    <div class="carousel-item" style="background-image: url(images/competition-2064865_1920.jpg);">
-                        <div class="carousel-caption text-center">
-                            <h1>New Products</h1>
-                            <a class="btn btn-outline btn-lg outline">Read more</a>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-                <!-- Slide 3 -->
-                    <div class="carousel-item" style="background-image: url(images/post-it-5033079_1920.jpg);">
-                        <div class="carousel-caption text-center">
-                            <h1>Become our customer</h1>
-                            <a class="btn btn-outline btn-lg outline">Read more</a>
-                        </div>
-                        <div class="overlay"></div>
-                    </div>
-                <!-- Previous and Next Buttons -->
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                </div>
+    <!-- Image Slider -->
+    <section>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="7000"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" id="about-us">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="
+              background-image: url(images/batu-gezer-MDPg0yw4M1c-unsplash.jpg);
+            "
+          >
+            <div class="carousel-caption text-center">
+              <h1>Goals & Objectives</h1>
+              <a class="btn btn-outline btn-lg outline">Read more</a>
             </div>
-        </section>
-
-        <!-- Bootstrap Image Grid -->
-
-        <div class="container my-container">
-            <div class="row my-row">
-                <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="350"> 
-                    <div class="thumbnail">
-                        <img src="images/newyork1.jpg" class="img-fluid" class="img-rounded" alt="news image"> 
-                    </div>
-                </div>
-                <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="350"> 
-                    <p>
-                        Find all of our offices. 
-                    </p>
-                </div>
+            <div class="overlay"></div>
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(images/robot.png)"
+          >
+            <div class="carousel-caption text-center">
+              <h1>New Products</h1>
+              <a class="btn btn-outline btn-lg outline">Read more</a>
             </div>
-            <div class="row my-row" id="careers"> 
-                <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="400"> 
-                    <p>Struggling with your job?</p>
-                    <p>Join us!</p>
-                </div>
-                <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="400"> 
-                    <div class="thumbnail">
-                        <img src="images/job.jpg" class="img-fluid" class="img-rounded" alt="news image"> 
-                    </div>
-                </div>
+            <div class="overlay"></div>
+          </div>
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(images/agree2.png)"
+          >
+            <div class="carousel-caption text-center">
+              <h1>Become our customer</h1>
+              <a class="btn btn-outline btn-lg outline">Read more</a>
             </div>
-        
-            <div class="row my-row">
-                <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="450"> 
-                    <div class="thumbnail">
-                        <img src="images/uni.jpg" class="img-fluid" class="img-rounded" alt="news image">
-                    </div>
-                </div>
-                <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="450"> 
-                   <p>Getting a Bachelor's, Master's or PhD in MINT?</p>
-                   <p>Get your scholarship!</p>
-                </div>
-            </div>
-            <div class="row my-row" id="products">
-                <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="500"> 
-                    <p>Upcoming releases.</p>
-                    <p>Products.</p>
-                    <p>Find out more!</p>
-                </div>
-                <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="500"> 
-                    <div class="thumbnail">
-                        <img src="images/city.jpg" class="img-fluid" class="img-rounded" alt="news image">
-                    </div>
-                </div>
-            </div>
+            <div class="overlay"></div>
+          </div>
+          <!-- Previous and Next Buttons -->
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
         </div>
+      </div>
+    </section>
 
-        <!-- Contact section -->
+    <!-- Bootstrap Image Grid -->
 
-        <section class="contact" id="contact">
-            <div class="container">
-                <div class="contact-details" data-aos="fade-up" data-aos-delay="550">
-                    <h1>Contact</h1>
-                </div>
-                <form action="">
-                    <div class="contact-frame" data-aos="fade-up" data-aos-delay="550">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Enter your name" required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Enter your email address" required>
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-        </section>
+    <div class="container my-container">
+      <div class="row my-row">
+        <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="150">
+          <div class="thumbnail">
+            <img
+              src="images/newyork1.jpg"
+              class="img-fluid"
+              class="img-rounded"
+              alt="news image"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="150">
+          <a href=""><p>Find all of our offices.</p></a>
+        </div>
+      </div>
+      <div class="row my-row" id="careers">
+        <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="150">
+          <p>Struggling with your job?</p>
+          <a href=""><p>Join us!</p></a>
+        </div>
+        <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="150">
+          <div class="thumbnail">
+            <img
+              src="images/job.jpg"
+              class="img-fluid"
+              class="img-rounded"
+              alt="news image"
+            />
+          </div>
+        </div>
+      </div>
 
-        <footer class="copyright">
-            <div id="up">
-                <i class="fal fa-arrow-up"></i>
-            </div>
-            <p>&copy; 2020 Selma Kovacevic</p>
-        </footer>
+      <div class="row my-row">
+        <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="150">
+          <div class="thumbnail">
+            <img
+              src="images/clay-banks-Hf8n0RUk7g0-unsplash.jpg"
+              class="img-fluid"
+              class="img-rounded"
+              alt="news image"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="150">
+          <p>Getting a Bachelor's, Master's or PhD in MINT?</p>
+          <a href=""><p>Get your scholarship here!</p></a>
+        </div>
+      </div>
+      <div class="row my-row" id="products">
+        <div class="col-md-6 my-col" data-aos="fade-right" data-aos-delay="150">
+          <p>Upcoming releases.</p>
+          <p>Products.</p>
+          <a href=""><p>Find out more!</p></a>
+        </div>
+        <div class="col-md-6 my-col" data-aos="fade-left" data-aos-delay="150">
+          <div class="thumbnail">
+            <img
+              src="images/city.jpg"
+              class="img-fluid"
+              class="img-rounded"
+              alt="news image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="main.js"></script>
-        <script src="app.js"></script>
+    <!-- Contact section -->
 
-    </body>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-details" data-aos="fade-up" data-aos-delay="150">
+          <h1>Contact</h1>
+        </div>
+        <form action="http://localhost:3000/contact" method="POST">
+          <div class="contact-frame" data-aos="fade-up" data-aos-delay="150">
+            <label for="name">Name</label>
+            <input
+              class="field"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              class="field"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <input type="button" id="submitbtn" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <div id="up">
+        <i class="fal fa-arrow-up"></i>
+      </div>
+      <p>&copy; 2020 Selma Kovacevic</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+      integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+      integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

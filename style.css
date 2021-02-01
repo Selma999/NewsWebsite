@@ -1,18 +1,3 @@
-/* body background animation */
-/*
-@keyframes body-bg-anim {
-    0% {
-        background-color: white;
-    }
-    50% {
-        background-color: black;
-        background-image: none;
-    }
-    100% {
-        background-image: url("images/globe1.jpg");
-    }
-}*/
-
 /* Start */
 
 * {
@@ -32,26 +17,27 @@ body {
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+    background-color: black;
 }
 
 .bg {
     background-image: url("images/splash7.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 0;
+   /* background-position-y: 0; */
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
+    min-height: 100vh;
     transition: all 1s ease;
-   /* transition: background-position-y 1.5s 0.2s ease, background-color 1s ease;*/
 }
-
+/*
 .bg-active {
     background-position-y: -1500px;
     background-image: none;
     background-color: white;
     transition: all 1s ease;
-}
+}*/
 
 
 a {
@@ -60,9 +46,10 @@ a {
 }
 
 p {
+    margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: bolder;
     text-decoration: solid;
     color: white;
 }
@@ -140,6 +127,10 @@ header {
     align-items: center;
 }
 
+.search-txt {
+    border: 5rem !important;
+}
+
 li {
     margin: 0 2rem;
 }
@@ -152,7 +143,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-    background: linear-gradient(to top, rgb(189, 198, 247), rgb(6, 1, 65));
+    background: linear-gradient(to top, rgb(226, 194, 105), rgb(182, 53, 3));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -172,7 +163,6 @@ li {
 .title1 {
     color: black;
     display: flex;
-
 }
 
 .title1 h1 {
@@ -190,9 +180,10 @@ li {
     animation: text 2s ease-in-out;
 }
 
-.title p {
+.title1 p {
     font-size: 20rem;
     font-weight: bolder !important;
+    margin-top: 20rem;
 }
 
 
@@ -212,8 +203,11 @@ section {
 
 .carousel-item {
     height: 100vh;
-    position: center;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-image: center;*/
+    background-color: black;
 }
 
 .carousel-caption {
@@ -226,11 +220,14 @@ section {
     background-repeat: no-repeat !important;
 }
 
+.carousel-caption a:hover {
+    text-decoration: none;
+}
+
 .carousel-caption h1 {
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem black;
     padding-bottom: 1rem;
     vertical-align: middle;
     height: 100%;
@@ -241,7 +238,7 @@ section {
 }
 
 .carousel-control-prev-icon:after {
-    color: rgb(65, 62, 62);
+    color: white;
 }
 
 .carousel-control-next-icon:after {
@@ -252,7 +249,7 @@ section {
     border-width: medium;
     border-radius: 0;
     font-size: 1.1rem;
-    background: rgb(65, 63, 63);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .outline {
@@ -260,7 +257,6 @@ section {
     color: white;
     font-size: 2rem;
     font-weight: bolder;
-    text-shadow: .1rem .1rem .5rem black;
 }
 
 .outline:hover {
@@ -274,15 +270,26 @@ section {
 
 .my-container {
     background-color: rgba(0, 0, 0, 0.9);
+    min-width: 100vw;
+}
+
+.my-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
 }
 
 .my-row {
-    padding: 70px 0px;
+    margin: 0px;
+    padding: 1rem 0px;
 }
 
 .col-md-6 p {
     text-transform: initial;
     font-size: 3rem;
+}
+
+.my-container a {
+    text-decoration-color: white;
 }
 
 /* Contact frame */
@@ -302,7 +309,6 @@ section {
     position: relative;
     margin-bottom: 1rem;
     color: whitesmoke;
-    opacity: .9;
 }
 
 form {
@@ -326,30 +332,59 @@ textarea {
     outline-color: rgba(0, 0, 0, 0.9);
 }
 
-input[type="submit"] {
+#submitbtn {
     width: initial;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.05);
+    position: center;
     color: white;
     font-size: 1.8rem;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
-    padding: 1rem 1rem;
-    border-radius: .1rem;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 0.5rem 1rem;
+    border-radius: .2rem;
     outline-color: white;
     cursor: pointer;
     transition: background-color 650ms;
 }
 
-input[type="submit"]:hover {
-    color: black;
-    background-color: white;
+#submitbtn:hover {
+    background: linear-gradient(to top, rgb(209, 174, 58), rgb(250, 25, 9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-::-moz-placeholder {
+.field {
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.field::placeholder, .field::-moz-placeholder, .field::-webkit-input-placeholder {
+    color: white;
+    font-weight: bolder;
+}
+
+.field:hover::placeholder, .field:hover::-moz-placeholder, .field:hover::-webkit-input-placeholder {
+    color: black;
+}
+
+.field:focus::placeholder, .field:focus::-moz-placeholder, .field:focus::-webkit-input-placeholder {
+    color: black;
+}
+
+.field:hover, .field:active, .field:focus {
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ::-moz-placeholder {
     color: black !important;
     opacity: 1;
-}
+} */
 
 
 .contact-frame {
@@ -393,7 +428,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("images/globe1.jpg");
+        background-image: url("images/splash7.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -428,7 +463,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 320px) {
     body {
-        background-image: url("images/globe1.jpg");
+        background-image: url("images/splash7.jpeg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
