@@ -24,21 +24,12 @@ body {
     background-image: url("images/splash7.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-   /* background-position-y: 0; */
     background-size: cover;
     background-attachment: fixed;
     background-color: black;
     min-height: 100vh;
     transition: all 1s ease;
 }
-/*
-.bg-active {
-    background-position-y: -1500px;
-    background-image: none;
-    background-color: white;
-    transition: all 1s ease;
-}*/
-
 
 a {
     text-decoration: solid;
@@ -127,9 +118,36 @@ header {
     align-items: center;
 }
 
-.search-txt {
-    border: 5rem !important;
+.my-2 {
+    margin-left: 0;
+    margin-right: 0;
 }
+
+.my-2 .form-control-feedback {
+    margin-left: 0;
+}
+
+.my-2 input[type=text] {
+    display: flex;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    position: center;
+  }
+  
+ .my-2 input[type=text]:focus {
+    background-color: transparent;
+    outline: 0;
+    width: 200px;
+    height: 30px;
+    color: white;
+  }
 
 li {
     margin: 0 2rem;
@@ -355,15 +373,15 @@ textarea {
 }
 
 .field {
-    font-family: "Roboto", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     background-color: rgba(0, 0, 0, 0.9);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     color: white;
 }
 
 .field::placeholder, .field::-moz-placeholder, .field::-webkit-input-placeholder {
     color: white;
-    font-weight: bolder;
 }
 
 .field:hover::placeholder, .field:hover::-moz-placeholder, .field:hover::-webkit-input-placeholder {
@@ -377,14 +395,8 @@ textarea {
 .field:hover, .field:active, .field:focus {
     color: black;
     background-color: white;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
-
-/* ::-moz-placeholder {
-    color: black !important;
-    opacity: 1;
-} */
-
 
 .contact-frame {
     padding: 10px;
