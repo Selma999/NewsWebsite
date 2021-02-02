@@ -202,12 +202,11 @@ section {
 /* Image Slider (Carousel) */
 
 .carousel-item {
+    background-color: black;
     height: 100vh;
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /*background-image: center;*/
-    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat !important;
 }
 
 .carousel-caption {
