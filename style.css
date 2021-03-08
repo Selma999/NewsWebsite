@@ -28,7 +28,6 @@ body {
     background-attachment: fixed;
     background-color: black;
     min-height: 100vh;
-    transition: all 1s ease;
 }
 
 a {
@@ -55,8 +54,8 @@ header {
 /* Hamburger menu */
 
 .top-nav {
-    background-color: rgba(0, 0, 0, 0.9);
-    border-bottom-right-radius: 90%;
+    background-color: transparent;
+    /* border-bottom-right-radius: 90%; */
     border-bottom-left-radius: 90%;
     height: 100vh;
     width:100%;
@@ -68,6 +67,15 @@ header {
 
 .change {
     top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.top-nav .menu-list li a {
+    color: transparent;
+}
+
+.top-nav.change .menu-list li a {
+    color: white;
 }
 
 .menu {
@@ -157,10 +165,12 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-size: 5rem;
     padding: 1rem;
+    transition: all 0.8s ease;
 }
 
 .nav-link:hover,
 .nav-link:focus {
+    transition: all 0.8s ease;
     background: linear-gradient(to top, rgb(226, 194, 105), rgb(182, 53, 3));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -329,7 +339,7 @@ section {
 }
 
 form {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -354,11 +364,11 @@ textarea {
     background-color: rgba(0, 0, 0, 0.05);
     position: center;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif !important;
-    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 0.5rem 1rem 0.5rem 0;
     border-radius: .2rem;
     outline-color: white;
     cursor: pointer;
@@ -373,11 +383,19 @@ textarea {
 }
 
 .field {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.12rem;
+    vertical-align: middle;
+    font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0.9);
     transition: all 0.5s ease;
     color: white;
+}
+
+.input-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .field::placeholder, .field::-moz-placeholder, .field::-webkit-input-placeholder {
@@ -396,6 +414,7 @@ textarea {
     color: black;
     background-color: white;
     transition: all 0.5s ease;
+    outline: none;
 }
 
 .contact-frame {
